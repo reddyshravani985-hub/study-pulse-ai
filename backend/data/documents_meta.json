@@ -1,0 +1,154 @@
+{
+  "41a45845": {
+    "id": "41a45845",
+    "filename": "Machine_Learning_Core_Principles.pdf",
+    "file_size_bytes": 3808,
+    "total_pages": 3,
+    "total_chunks": 6,
+    "word_count": 496,
+    "status": "ready",
+    "status_message": "Document processed successfully.",
+    "upload_timestamp": "2026-10-10T16:32:32.976994",
+    "pages": [
+      {
+        "page_number": 1,
+        "char_count": 1005,
+        "preview_text": "COURSE: CS401 - Artificial Intelligence & Machine Learning\nMODULE 1: Supervised Learning & Linear Models\nLECTURE NOTES - WEEK 2\n1. Introduction to Supervised Learning\nSupervised learning is an approac...",
+        "full_text": "COURSE: CS401 - Artificial Intelligence & Machine Learning\nMODULE 1: Supervised Learning & Linear Models\nLECTURE NOTES - WEEK 2\n1. Introduction to Supervised Learning\nSupervised learning is an approach to machine learning where an algorithm learns a mapping function from inpu\nD = {(x_1, y_1), (x_2, y_2), ..., (x_n, y_n)}.\nKey Concepts:\n- Features: The individual measurable properties or characteristics of a phenomenon being observed.\n- Target Variable: The actual ground-truth label we seek to predict.\n- Loss Function: A mathematical function L(y_hat, y) quantifying the error between prediction y_hat and ground t\nImportant Formulas:\n- Mean Squared Error (MSE): MSE = (1/n) * sum((y_i - y_hat_i)^2) from i=1 to n.\n- Linear Regression Hypothesis: h_theta(x) = theta_0 + theta_1*x_1 + ... + theta_p*x_p = theta^T * x.\nGradient Descent Update Rule:\ntheta_j := theta_j - alpha * (1/n) * sum((h_theta(x_i) - y_i) * x_ij)\nWhere alpha represents the learning rate, controlling step size in parameter space."
+      },
+      {
+        "page_number": 2,
+        "char_count": 1007,
+        "preview_text": "MODULE 2: Classification, Logistic Regression & Overfitting\nLECTURE NOTES - WEEK 3\n2. Logistic Regression & Binary Classification\nUnlike linear regression, logistic regression predicts categorical out...",
+        "full_text": "MODULE 2: Classification, Logistic Regression & Overfitting\nLECTURE NOTES - WEEK 3\n2. Logistic Regression & Binary Classification\nUnlike linear regression, logistic regression predicts categorical outcomes. It uses the Sigmoid (logistic) function \nsigma(z) = 1 / (1 + e^(-z))\nDefinitions:\n- Odds Ratio: The ratio of the probability of success to the probability of failure: p / (1 - p).\n- Log-Odds (Logit): log(p / (1 - p)) = theta^T * x.\n- Cross-Entropy Loss: J(theta) = - (1/n) * sum[ y_i * log(y_hat_i) + (1 - y_i) * log(1 - y_hat_i) ].\n3. The Bias-Variance Tradeoff:\n- High Bias (Underfitting): Model is overly simplistic and cannot capture underlying trends. Training error is high, \n- High Variance (Overfitting): Model fits training noise and memorizes data. Training error is low, but validation/te\n- Regularization (L1 Lasso and L2 Ridge): Adds penalty terms to the loss function to constrain model complexity.\nL2 Penalty: Loss + lambda * sum(theta_j^2).\nL1 Penalty: Loss + lambda * sum(|theta_j|)."
+      },
+      {
+        "page_number": 3,
+        "char_count": 1081,
+        "preview_text": "MODULE 3: Neural Networks & Evaluation Metrics\nLECTURE NOTES - WEEK 4\n4. Artificial Neural Networks (ANN):\nNeural networks consist of an input layer, one or more hidden layers, and an output layer.\nEa...",
+        "full_text": "MODULE 3: Neural Networks & Evaluation Metrics\nLECTURE NOTES - WEEK 4\n4. Artificial Neural Networks (ANN):\nNeural networks consist of an input layer, one or more hidden layers, and an output layer.\nEach neuron computes an affine transformation followed by a non-linear activation function:\na = f(W * x + b).\nCommon Activation Functions:\n- ReLU (Rectified Linear Unit): f(x) = max(0, x). Solves vanishing gradient problem for positive activations.\n- Softmax Function: Normalizes an array of logits into a probability distribution summing to 1.0:\n Softmax(z_i) = e^(z_i) / sum(e^(z_j)).\n5. Model Evaluation Metrics:\n- Confusion Matrix: True Positives (TP), False Positives (FP), True Negatives (TN), False Negatives (FN).\n- Accuracy: (TP + TN) / (TP + TN + FP + FN). Can be misleading with imbalanced datasets.\n- Precision: TP / (TP + FP). Measures correctness among predicted positives.\n- Recall (Sensitivity): TP / (TP + FN). Measures ability to find all actual positive cases.\n- F1-Score: The harmonic mean of Precision and Recall: 2 * (Precision * Recall) / (Precision + Recall)."
+      }
+    ],
+    "chunks": [
+      {
+        "chunk_id": "41a45845_c0",
+        "doc_id": "41a45845",
+        "page_number": 1,
+        "text": "COURSE: CS401 - Artificial Intelligence & Machine Learning\nMODULE 1: Supervised Learning & Linear Models\nLECTURE NOTES - WEEK 2\n1. Introduction to Supervised Learning\nSupervised learning is an approach to machine learning where an algorithm learns a mapping function from inpu\nD = {(x_1, y_1), (x_2, y_2), ..., (x_n, y_n)}.\nKey Concepts:\n- Features: The individual measurable properties or characteristics of a phenomenon being observed.\n- Target Variable: The actual ground-truth label we seek to predict.\n- Loss Function: A mathematical function L(y_hat, y) quantifying the error between prediction y_hat and ground t\nImportant Formulas:\n- Mean Squared Error (MSE): MSE = (1/n) * sum((y_i - y_hat_i)^2) from i=1 to n.",
+        "char_count": 719
+      },
+      {
+        "chunk_id": "41a45845_c1",
+        "doc_id": "41a45845",
+        "page_number": 1,
+        "text": "g the error between prediction y_hat and ground t\nImportant Formulas:\n- Mean Squared Error (MSE): MSE = (1/n) * sum((y_i - y_hat_i)^2) from i=1 to n.\n- Linear Regression Hypothesis: h_theta(x) = theta_0 + theta_1*x_1 + ... + theta_p*x_p = theta^T * x.\nGradient Descent Update Rule:\ntheta_j := theta_j - alpha * (1/n) * sum((h_theta(x_i) - y_i) * x_ij)\nWhere alpha represents the learning rate, controlling step size in parameter space.",
+        "char_count": 435
+      },
+      {
+        "chunk_id": "41a45845_c2",
+        "doc_id": "41a45845",
+        "page_number": 2,
+        "text": "MODULE 2: Classification, Logistic Regression & Overfitting\nLECTURE NOTES - WEEK 3\n2. Logistic Regression & Binary Classification\nUnlike linear regression, logistic regression predicts categorical outcomes. It uses the Sigmoid (logistic) function \nsigma(z) = 1 / (1 + e^(-z))\nDefinitions:\n- Odds Ratio: The ratio of the probability of success to the probability of failure: p / (1 - p).\n- Log-Odds (Logit): log(p / (1 - p)) = theta^T * x.\n- Cross-Entropy Loss: J(theta) = - (1/n) * sum[ y_i * log(y_hat_i) + (1 - y_i) * log(1 - y_hat_i) ].\n3. The Bias-Variance Tradeoff:\n- High Bias (Underfitting): Model is overly simplistic and cannot capture underlying trends. Training error is high, \n- High Variance (Overfitting): Model fits training noise and memorizes data.",
+        "char_count": 765
+      },
+      {
+        "chunk_id": "41a45845_c3",
+        "doc_id": "41a45845",
+        "page_number": 2,
+        "text": "implistic and cannot capture underlying trends. Training error is high, \n- High Variance (Overfitting): Model fits training noise and memorizes data. Training error is low, but validation/te\n- Regularization (L1 Lasso and L2 Ridge): Adds penalty terms to the loss function to constrain model complexity.\nL2 Penalty: Loss + lambda * sum(theta_j^2).\nL1 Penalty: Loss + lambda * sum(|theta_j|).",
+        "char_count": 391
+      },
+      {
+        "chunk_id": "41a45845_c4",
+        "doc_id": "41a45845",
+        "page_number": 3,
+        "text": "MODULE 3: Neural Networks & Evaluation Metrics\nLECTURE NOTES - WEEK 4\n4. Artificial Neural Networks (ANN):\nNeural networks consist of an input layer, one or more hidden layers, and an output layer.\nEach neuron computes an affine transformation followed by a non-linear activation function:\na = f(W * x + b).\nCommon Activation Functions:\n- ReLU (Rectified Linear Unit): f(x) = max(0, x). Solves vanishing gradient problem for positive activations.\n- Softmax Function: Normalizes an array of logits into a probability distribution summing to 1.0:\n Softmax(z_i) = e^(z_i) / sum(e^(z_j)).\n5. Model Evaluation Metrics:\n- Confusion Matrix: True Positives (TP), False Positives (FP), True Negatives (TN), False Negatives (FN).",
+        "char_count": 719
+      },
+      {
+        "chunk_id": "41a45845_c5",
+        "doc_id": "41a45845",
+        "page_number": 3,
+        "text": "sum(e^(z_j)).\n5. Model Evaluation Metrics:\n- Confusion Matrix: True Positives (TP), False Positives (FP), True Negatives (TN), False Negatives (FN).\n- Accuracy: (TP + TN) / (TP + TN + FP + FN). Can be misleading with imbalanced datasets.\n- Precision: TP / (TP + FP). Measures correctness among predicted positives.\n- Recall (Sensitivity): TP / (TP + FN). Measures ability to find all actual positive cases.\n- F1-Score: The harmonic mean of Precision and Recall: 2 * (Precision * Recall) / (Precision + Recall).",
+        "char_count": 510
+      }
+    ],
+    "full_text": "--- Page 1 ---\nCOURSE: CS401 - Artificial Intelligence & Machine Learning\nMODULE 1: Supervised Learning & Linear Models\nLECTURE NOTES - WEEK 2\n1. Introduction to Supervised Learning\nSupervised learning is an approach to machine learning where an algorithm learns a mapping function from inpu\nD = {(x_1, y_1), (x_2, y_2), ..., (x_n, y_n)}.\nKey Concepts:\n- Features: The individual measurable properties or characteristics of a phenomenon being observed.\n- Target Variable: The actual ground-truth label we seek to predict.\n- Loss Function: A mathematical function L(y_hat, y) quantifying the error between prediction y_hat and ground t\nImportant Formulas:\n- Mean Squared Error (MSE): MSE = (1/n) * sum((y_i - y_hat_i)^2) from i=1 to n.\n- Linear Regression Hypothesis: h_theta(x) = theta_0 + theta_1*x_1 + ... + theta_p*x_p = theta^T * x.\nGradient Descent Update Rule:\ntheta_j := theta_j - alpha * (1/n) * sum((h_theta(x_i) - y_i) * x_ij)\nWhere alpha represents the learning rate, controlling step size in parameter space.\n\n--- Page 2 ---\nMODULE 2: Classification, Logistic Regression & Overfitting\nLECTURE NOTES - WEEK 3\n2. Logistic Regression & Binary Classification\nUnlike linear regression, logistic regression predicts categorical outcomes. It uses the Sigmoid (logistic) function \nsigma(z) = 1 / (1 + e^(-z))\nDefinitions:\n- Odds Ratio: The ratio of the probability of success to the probability of failure: p / (1 - p).\n- Log-Odds (Logit): log(p / (1 - p)) = theta^T * x.\n- Cross-Entropy Loss: J(theta) = - (1/n) * sum[ y_i * log(y_hat_i) + (1 - y_i) * log(1 - y_hat_i) ].\n3. The Bias-Variance Tradeoff:\n- High Bias (Underfitting): Model is overly simplistic and cannot capture underlying trends. Training error is high, \n- High Variance (Overfitting): Model fits training noise and memorizes data. Training error is low, but validation/te\n- Regularization (L1 Lasso and L2 Ridge): Adds penalty terms to the loss function to constrain model complexity.\nL2 Penalty: Loss + lambda * sum(theta_j^2).\nL1 Penalty: Loss + lambda * sum(|theta_j|).\n\n--- Page 3 ---\nMODULE 3: Neural Networks & Evaluation Metrics\nLECTURE NOTES - WEEK 4\n4. Artificial Neural Networks (ANN):\nNeural networks consist of an input layer, one or more hidden layers, and an output layer.\nEach neuron computes an affine transformation followed by a non-linear activation function:\na = f(W * x + b).\nCommon Activation Functions:\n- ReLU (Rectified Linear Unit): f(x) = max(0, x). Solves vanishing gradient problem for positive activations.\n- Softmax Function: Normalizes an array of logits into a probability distribution summing to 1.0:\n Softmax(z_i) = e^(z_i) / sum(e^(z_j)).\n5. Model Evaluation Metrics:\n- Confusion Matrix: True Positives (TP), False Positives (FP), True Negatives (TN), False Negatives (FN).\n- Accuracy: (TP + TN) / (TP + TN + FP + FN). Can be misleading with imbalanced datasets.\n- Precision: TP / (TP + FP). Measures correctness among predicted positives.\n- Recall (Sensitivity): TP / (TP + FN). Measures ability to find all actual positive cases.\n- F1-Score: The harmonic mean of Precision and Recall: 2 * (Precision * Recall) / (Precision + Recall)."
+  },
+  "20188a22": {
+    "id": "20188a22",
+    "filename": "Machine_Learning_Core_Principles.pdf",
+    "file_size_bytes": 3808,
+    "total_pages": 3,
+    "total_chunks": 6,
+    "word_count": 496,
+    "status": "ready",
+    "status_message": "Document processed successfully.",
+    "upload_timestamp": "2026-10-10T16:33:04.132757",
+    "pages": [
+      {
+        "page_number": 1,
+        "char_count": 1005,
+        "preview_text": "COURSE: CS401 - Artificial Intelligence & Machine Learning\nMODULE 1: Supervised Learning & Linear Models\nLECTURE NOTES - WEEK 2\n1. Introduction to Supervised Learning\nSupervised learning is an approac...",
+        "full_text": "COURSE: CS401 - Artificial Intelligence & Machine Learning\nMODULE 1: Supervised Learning & Linear Models\nLECTURE NOTES - WEEK 2\n1. Introduction to Supervised Learning\nSupervised learning is an approach to machine learning where an algorithm learns a mapping function from inpu\nD = {(x_1, y_1), (x_2, y_2), ..., (x_n, y_n)}.\nKey Concepts:\n- Features: The individual measurable properties or characteristics of a phenomenon being observed.\n- Target Variable: The actual ground-truth label we seek to predict.\n- Loss Function: A mathematical function L(y_hat, y) quantifying the error between prediction y_hat and ground t\nImportant Formulas:\n- Mean Squared Error (MSE): MSE = (1/n) * sum((y_i - y_hat_i)^2) from i=1 to n.\n- Linear Regression Hypothesis: h_theta(x) = theta_0 + theta_1*x_1 + ... + theta_p*x_p = theta^T * x.\nGradient Descent Update Rule:\ntheta_j := theta_j - alpha * (1/n) * sum((h_theta(x_i) - y_i) * x_ij)\nWhere alpha represents the learning rate, controlling step size in parameter space."
+      },
+      {
+        "page_number": 2,
+        "char_count": 1007,
+        "preview_text": "MODULE 2: Classification, Logistic Regression & Overfitting\nLECTURE NOTES - WEEK 3\n2. Logistic Regression & Binary Classification\nUnlike linear regression, logistic regression predicts categorical out...",
+        "full_text": "MODULE 2: Classification, Logistic Regression & Overfitting\nLECTURE NOTES - WEEK 3\n2. Logistic Regression & Binary Classification\nUnlike linear regression, logistic regression predicts categorical outcomes. It uses the Sigmoid (logistic) function \nsigma(z) = 1 / (1 + e^(-z))\nDefinitions:\n- Odds Ratio: The ratio of the probability of success to the probability of failure: p / (1 - p).\n- Log-Odds (Logit): log(p / (1 - p)) = theta^T * x.\n- Cross-Entropy Loss: J(theta) = - (1/n) * sum[ y_i * log(y_hat_i) + (1 - y_i) * log(1 - y_hat_i) ].\n3. The Bias-Variance Tradeoff:\n- High Bias (Underfitting): Model is overly simplistic and cannot capture underlying trends. Training error is high, \n- High Variance (Overfitting): Model fits training noise and memorizes data. Training error is low, but validation/te\n- Regularization (L1 Lasso and L2 Ridge): Adds penalty terms to the loss function to constrain model complexity.\nL2 Penalty: Loss + lambda * sum(theta_j^2).\nL1 Penalty: Loss + lambda * sum(|theta_j|)."
+      },
+      {
+        "page_number": 3,
+        "char_count": 1081,
+        "preview_text": "MODULE 3: Neural Networks & Evaluation Metrics\nLECTURE NOTES - WEEK 4\n4. Artificial Neural Networks (ANN):\nNeural networks consist of an input layer, one or more hidden layers, and an output layer.\nEa...",
+        "full_text": "MODULE 3: Neural Networks & Evaluation Metrics\nLECTURE NOTES - WEEK 4\n4. Artificial Neural Networks (ANN):\nNeural networks consist of an input layer, one or more hidden layers, and an output layer.\nEach neuron computes an affine transformation followed by a non-linear activation function:\na = f(W * x + b).\nCommon Activation Functions:\n- ReLU (Rectified Linear Unit): f(x) = max(0, x). Solves vanishing gradient problem for positive activations.\n- Softmax Function: Normalizes an array of logits into a probability distribution summing to 1.0:\n Softmax(z_i) = e^(z_i) / sum(e^(z_j)).\n5. Model Evaluation Metrics:\n- Confusion Matrix: True Positives (TP), False Positives (FP), True Negatives (TN), False Negatives (FN).\n- Accuracy: (TP + TN) / (TP + TN + FP + FN). Can be misleading with imbalanced datasets.\n- Precision: TP / (TP + FP). Measures correctness among predicted positives.\n- Recall (Sensitivity): TP / (TP + FN). Measures ability to find all actual positive cases.\n- F1-Score: The harmonic mean of Precision and Recall: 2 * (Precision * Recall) / (Precision + Recall)."
+      }
+    ],
+    "chunks": [
+      {
+        "chunk_id": "20188a22_c0",
+        "doc_id": "20188a22",
+        "page_number": 1,
+        "text": "COURSE: CS401 - Artificial Intelligence & Machine Learning\nMODULE 1: Supervised Learning & Linear Models\nLECTURE NOTES - WEEK 2\n1. Introduction to Supervised Learning\nSupervised learning is an approach to machine learning where an algorithm learns a mapping function from inpu\nD = {(x_1, y_1), (x_2, y_2), ..., (x_n, y_n)}.\nKey Concepts:\n- Features: The individual measurable properties or characteristics of a phenomenon being observed.\n- Target Variable: The actual ground-truth label we seek to predict.\n- Loss Function: A mathematical function L(y_hat, y) quantifying the error between prediction y_hat and ground t\nImportant Formulas:\n- Mean Squared Error (MSE): MSE = (1/n) * sum((y_i - y_hat_i)^2) from i=1 to n.",
+        "char_count": 719
+      },
+      {
+        "chunk_id": "20188a22_c1",
+        "doc_id": "20188a22",
+        "page_number": 1,
+        "text": "g the error between prediction y_hat and ground t\nImportant Formulas:\n- Mean Squared Error (MSE): MSE = (1/n) * sum((y_i - y_hat_i)^2) from i=1 to n.\n- Linear Regression Hypothesis: h_theta(x) = theta_0 + theta_1*x_1 + ... + theta_p*x_p = theta^T * x.\nGradient Descent Update Rule:\ntheta_j := theta_j - alpha * (1/n) * sum((h_theta(x_i) - y_i) * x_ij)\nWhere alpha represents the learning rate, controlling step size in parameter space.",
+        "char_count": 435
+      },
+      {
+        "chunk_id": "20188a22_c2",
+        "doc_id": "20188a22",
+        "page_number": 2,
+        "text": "MODULE 2: Classification, Logistic Regression & Overfitting\nLECTURE NOTES - WEEK 3\n2. Logistic Regression & Binary Classification\nUnlike linear regression, logistic regression predicts categorical outcomes. It uses the Sigmoid (logistic) function \nsigma(z) = 1 / (1 + e^(-z))\nDefinitions:\n- Odds Ratio: The ratio of the probability of success to the probability of failure: p / (1 - p).\n- Log-Odds (Logit): log(p / (1 - p)) = theta^T * x.\n- Cross-Entropy Loss: J(theta) = - (1/n) * sum[ y_i * log(y_hat_i) + (1 - y_i) * log(1 - y_hat_i) ].\n3. The Bias-Variance Tradeoff:\n- High Bias (Underfitting): Model is overly simplistic and cannot capture underlying trends. Training error is high, \n- High Variance (Overfitting): Model fits training noise and memorizes data.",
+        "char_count": 765
+      },
+      {
+        "chunk_id": "20188a22_c3",
+        "doc_id": "20188a22",
+        "page_number": 2,
+        "text": "implistic and cannot capture underlying trends. Training error is high, \n- High Variance (Overfitting): Model fits training noise and memorizes data. Training error is low, but validation/te\n- Regularization (L1 Lasso and L2 Ridge): Adds penalty terms to the loss function to constrain model complexity.\nL2 Penalty: Loss + lambda * sum(theta_j^2).\nL1 Penalty: Loss + lambda * sum(|theta_j|).",
+        "char_count": 391
+      },
+      {
+        "chunk_id": "20188a22_c4",
+        "doc_id": "20188a22",
+        "page_number": 3,
+        "text": "MODULE 3: Neural Networks & Evaluation Metrics\nLECTURE NOTES - WEEK 4\n4. Artificial Neural Networks (ANN):\nNeural networks consist of an input layer, one or more hidden layers, and an output layer.\nEach neuron computes an affine transformation followed by a non-linear activation function:\na = f(W * x + b).\nCommon Activation Functions:\n- ReLU (Rectified Linear Unit): f(x) = max(0, x). Solves vanishing gradient problem for positive activations.\n- Softmax Function: Normalizes an array of logits into a probability distribution summing to 1.0:\n Softmax(z_i) = e^(z_i) / sum(e^(z_j)).\n5. Model Evaluation Metrics:\n- Confusion Matrix: True Positives (TP), False Positives (FP), True Negatives (TN), False Negatives (FN).",
+        "char_count": 719
+      },
+      {
+        "chunk_id": "20188a22_c5",
+        "doc_id": "20188a22",
+        "page_number": 3,
+        "text": "sum(e^(z_j)).\n5. Model Evaluation Metrics:\n- Confusion Matrix: True Positives (TP), False Positives (FP), True Negatives (TN), False Negatives (FN).\n- Accuracy: (TP + TN) / (TP + TN + FP + FN). Can be misleading with imbalanced datasets.\n- Precision: TP / (TP + FP). Measures correctness among predicted positives.\n- Recall (Sensitivity): TP / (TP + FN). Measures ability to find all actual positive cases.\n- F1-Score: The harmonic mean of Precision and Recall: 2 * (Precision * Recall) / (Precision + Recall).",
+        "char_count": 510
+      }
+    ],
+    "full_text": "--- Page 1 ---\nCOURSE: CS401 - Artificial Intelligence & Machine Learning\nMODULE 1: Supervised Learning & Linear Models\nLECTURE NOTES - WEEK 2\n1. Introduction to Supervised Learning\nSupervised learning is an approach to machine learning where an algorithm learns a mapping function from inpu\nD = {(x_1, y_1), (x_2, y_2), ..., (x_n, y_n)}.\nKey Concepts:\n- Features: The individual measurable properties or characteristics of a phenomenon being observed.\n- Target Variable: The actual ground-truth label we seek to predict.\n- Loss Function: A mathematical function L(y_hat, y) quantifying the error between prediction y_hat and ground t\nImportant Formulas:\n- Mean Squared Error (MSE): MSE = (1/n) * sum((y_i - y_hat_i)^2) from i=1 to n.\n- Linear Regression Hypothesis: h_theta(x) = theta_0 + theta_1*x_1 + ... + theta_p*x_p = theta^T * x.\nGradient Descent Update Rule:\ntheta_j := theta_j - alpha * (1/n) * sum((h_theta(x_i) - y_i) * x_ij)\nWhere alpha represents the learning rate, controlling step size in parameter space.\n\n--- Page 2 ---\nMODULE 2: Classification, Logistic Regression & Overfitting\nLECTURE NOTES - WEEK 3\n2. Logistic Regression & Binary Classification\nUnlike linear regression, logistic regression predicts categorical outcomes. It uses the Sigmoid (logistic) function \nsigma(z) = 1 / (1 + e^(-z))\nDefinitions:\n- Odds Ratio: The ratio of the probability of success to the probability of failure: p / (1 - p).\n- Log-Odds (Logit): log(p / (1 - p)) = theta^T * x.\n- Cross-Entropy Loss: J(theta) = - (1/n) * sum[ y_i * log(y_hat_i) + (1 - y_i) * log(1 - y_hat_i) ].\n3. The Bias-Variance Tradeoff:\n- High Bias (Underfitting): Model is overly simplistic and cannot capture underlying trends. Training error is high, \n- High Variance (Overfitting): Model fits training noise and memorizes data. Training error is low, but validation/te\n- Regularization (L1 Lasso and L2 Ridge): Adds penalty terms to the loss function to constrain model complexity.\nL2 Penalty: Loss + lambda * sum(theta_j^2).\nL1 Penalty: Loss + lambda * sum(|theta_j|).\n\n--- Page 3 ---\nMODULE 3: Neural Networks & Evaluation Metrics\nLECTURE NOTES - WEEK 4\n4. Artificial Neural Networks (ANN):\nNeural networks consist of an input layer, one or more hidden layers, and an output layer.\nEach neuron computes an affine transformation followed by a non-linear activation function:\na = f(W * x + b).\nCommon Activation Functions:\n- ReLU (Rectified Linear Unit): f(x) = max(0, x). Solves vanishing gradient problem for positive activations.\n- Softmax Function: Normalizes an array of logits into a probability distribution summing to 1.0:\n Softmax(z_i) = e^(z_i) / sum(e^(z_j)).\n5. Model Evaluation Metrics:\n- Confusion Matrix: True Positives (TP), False Positives (FP), True Negatives (TN), False Negatives (FN).\n- Accuracy: (TP + TN) / (TP + TN + FP + FN). Can be misleading with imbalanced datasets.\n- Precision: TP / (TP + FP). Measures correctness among predicted positives.\n- Recall (Sensitivity): TP / (TP + FN). Measures ability to find all actual positive cases.\n- F1-Score: The harmonic mean of Precision and Recall: 2 * (Precision * Recall) / (Precision + Recall)."
+  }
+}
