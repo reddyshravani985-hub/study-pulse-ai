@@ -4,3 +4,22 @@ dist/
 .env.*
 !.env.example
 .DS_Store
+
+# Python virtual environment
+backend/venv/
+venv/
+__pycache__/
+*.py[cod]
+
+# Node dependencies
+node_modules/
+frontend/node_modules/
+
+# Environment variables and secrets
+.env
+.env.*
+!.env.example
+
+# Build output
+frontend/dist/
+.DS_Store
